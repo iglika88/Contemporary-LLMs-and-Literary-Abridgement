@@ -6,6 +6,7 @@ Nikolova-Stoupak, Iglika, Gaël Lejeune and Eva Schaeffer-Lacroix. (2024). “Co
 
 Descrption of the materials: 
 
-1. Protocols 
+1. Protocols
+   
 Human evaluation protocols in the three examined languages (Bulgarian, English, and French): 
 
