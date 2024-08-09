@@ -1,0 +1,107 @@
+ZERO-SHOT
+
+(English)
+"Please provide an abridged version of the following text: {text}"
+
+(French)
+"Veuillez fournir une version abrégée du texte suivant : {text}"
+
+(Bulgarian)
+"Моля, създайте адаптирана версия на следния текст: {text}"
+
+
+CHUNKS
+
+(English)
+"I will send a text in several parts and ask you to abridge each part. Please provide an abridged version of the following text: {text}"
+
+(French)
+"J'enverrai un texte en plusieurs parties et vous demanderai d'abréger chaque partie. Veuillez fournir une version abrégée du texte suivant : {text}"
+
+(Bulgarian)
+"Ще изпратя текст на няколко части и ще Ви помоля да създадете адаптирана версия на всяка част. Моля, създайте адаптирана версия на следния текст: {text}"
+
+In subsequent turns, the prompts are identical to the ones for the 'zero-shot' setting.
+
+
+ONE-SHOT
+
+(English)
+"Look at this pair of an original and abridged text and generate an abridged text in a similar way.
+[ORIGINAL TEXT:]
+{text}
+[ABRIDGED TEXT:]
+{text}
+[ORIGINAL TEXT:]
+{text}
+[ABRIDGED TEXT:]"
+
+(Depending on the model, the prompt is broken down into two or more separate prompts.)
+
+(French)
+"Regardez cette paire de textes original et abrégé et générez un texte abrégé de la même manière.
+[TEXTE ORIGINAL :]
+{text}
+[TEXTE ABRÉGÉ :]
+{text}
+[TEXTE ORIGINAL :]
+{text}
+[TEXTE ABRÉGÉ :]"
+
+(Depending on the model, the prompt is broken down into two or more separate prompts.)
+
+(Bulgarian)
+"Ще Ви предоставя двойка текстове – оригинален и адаптиран. След това ще Ви изпратя още един оригинален текст и ще Ви помоля да създадете адаптиран текст по същия модел.
+ГОТОВИ ЛИ СТЕ ДА ИЗПРАТЯ ПЪРВИЯ ТЕКСТ?
+[ОРИГИНАЛЕН ТЕКСТ:]
+{text}
+ГОТОВИ ЛИ СТЕ ДА ИЗПРАТЯ СЛЕДВАЩИЯ ТЕКСТ?
+[АДАПТИРАН ТЕКСТ:]
+{text}
+ГОТОВИ ЛИ СТЕ ДА ИЗПРАТЯ СЛЕДВАЩИЯ ТЕКСТ?
+[ОРИГИНАЛЕН ТЕКСТ:]
+{text}
+[АДАПТИРАН ТЕКСТ:]"
+
+
+CROSSLINGUAL DIRECT 
+
+(English)
+"Please provide an abridged version of the following text in English: {text}"
+
+(French)
+"Veuillez fournir une version abrégée du texte suivant en français : {text}"
+
+(Bulgarian)
+"Моля, създайте адаптирана версия на следния текст на български език: {text}"
+
+
+CROSSLINGUAL CHAIN-OF-THOUGHT (TRANSLATION FIRST)
+
+(English)
+"Please translate the following text into English: {text}"
+"Now, please provide an abridged version of the text: {translated text}"
+
+(French)
+"Veuillez traduire le texte suivant en français : {text}"
+"Maintenant, veuillez fournir une version abrégée du texte : {translated text}"
+
+(Bulgarian)
+"Моля, преведете следния текст на български език: {text}"
+"Сега, моля създайте адаптирана версия на този текст: {translated text}"
+
+CROSSLINGUAL CHAIN-OF-THOUGHT (ABRIDGEMENT FIRST)
+
+(English)
+"Please provide an abridged version of the following text: {text}"
+"Now, please translate the text into English: {abridged text}"
+
+(French)
+"Veuillez fournir une version abrégée du texte suivant: {text}"
+"Maintenant, veuillez traduire ce texte en français : {abridged text}"
+
+(Bulgarian)
+"Моля, създайте адаптирана версия на следния текст: {text}"
+"Сега, моля преведете този текст на български език: {abridged text}"
+
+For all crosslingual scenarios, the language of the prompt is the desired target language. When the model returned text in the wrong language, the English text "Please make sure that the text is in {language}" was added to the prompt.
