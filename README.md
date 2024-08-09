@@ -6,7 +6,15 @@ Nikolova-Stoupak, Iglika, Gaël Lejeune and Eva Schaeffer-Lacroix. (2024). “Co
 
 Descrption of the materials: 
 
-1. Protocols
+1. Evaluation Protocols
    
-Human evaluation protocols in the three examined languages (Bulgarian, English, and French): 
+The protocols used for human evaluation in the three examined languages (Bulgarian, English, and French)
+
+2. Texts
+
+The texts used in the context of human evaluation 
+
+3. LLM Prompts
+
+The prompts used for text generation by the implied Large Language Models (ChatGPT, GeminiPro, Mistral-Instruct7B and BgGPT)
 
